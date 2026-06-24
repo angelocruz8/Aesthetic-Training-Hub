@@ -3,7 +3,7 @@ import { Navbar } from "@/components/Navbar";
 import { DirectoryHero } from "@/components/practitioners/DirectoryHero";
 import { FeaturesSection } from "@/components/practitioners/FeaturesSection";
 import { FilterBar } from "@/components/practitioners/FilterBar";
-import { PractitionerCard } from "@/components/practitioners/PractitionerCard";
+import { PractitionerCard } from "@/components/PractitionerCard";
 import { ChevronDownIcon } from "@/components/icons";
 import { practitioners } from "@/data/practitioners";
 

@@ -13,7 +13,6 @@ export function getPractitionerDisplayMeta(practitioner: Practitioner) {
   const seed = parseInt(practitioner.id.replace(/\D/g, ""), 10) || 1;
   const rating = (4.5 + (seed % 5) * 0.1).toFixed(1);
   const reviews = 80 + (seed * 17) % 280;
-  const price = practitioner.tier === "Premium" ? 249 : 149;
   const initials = practitioner.name
     .replace(/^Dr\.\s*/i, "")
     .split(" ")
@@ -23,5 +22,5 @@ export function getPractitionerDisplayMeta(practitioner: Practitioner) {
     .toUpperCase();
   const avatarGradient = AVATAR_GRADIENTS[seed % AVATAR_GRADIENTS.length];
 
-  return { rating, reviews, price, initials, avatarGradient };
+  return { rating, reviews, initials, avatarGradient };
 }

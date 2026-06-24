@@ -1,69 +1,94 @@
 # Aesthetic Training Hub
 
-Production-ready Next.js starter for the Aesthetic Training Hub platform.
+A modern SaaS-style practitioner directory built with Next.js, TypeScript, and Tailwind CSS. Browse vetted UK aesthetic trainers, filter by specialism and location, and explore premium vs standard practitioner listings.
 
-## Stack
-
-- [Next.js](https://nextjs.org) (App Router)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-
-## Prerequisites
-
-- Node.js 18.18 or later
-- npm (or yarn, pnpm, bun)
+![Practitioner Directory](./docs/images/practitioner-directory.png)
 
 ## Setup
 
-1. Clone the repository and enter the project directory:
+```bash
+npm install
+npm run dev
+```
 
-   ```bash
-   cd aesthetic-training-hub
-   ```
+Open [http://localhost:3000/practitioners](http://localhost:3000/practitioners) to view the directory.
 
-2. Install dependencies:
+### Additional scripts
 
-   ```bash
-   npm install
-   ```
+| Command         | Description                  |
+| --------------- | ---------------------------- |
+| `npm run build` | Create a production build    |
+| `npm run start` | Serve the production build   |
+| `npm run lint`  | Run ESLint                   |
 
-3. Start the development server:
+## What was built
 
-   ```bash
-   npm run dev
-   ```
+### Practitioner directory page
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+A full `/practitioners` page with:
 
-## Scripts
+- Navbar, hero section, and features footer
+- Responsive practitioner grid (1 / 2 / 3 columns)
+- Sort control (recommended, name, location)
+- Clean SaaS marketplace styling with soft shadows and rounded cards
 
-| Command         | Description                          |
-| --------------- | ------------------------------------ |
-| `npm run dev`   | Start the development server         |
-| `npm run build` | Create a production build            |
-| `npm run start` | Serve the production build           |
-| `npm run lint`  | Run ESLint                           |
+### Filtering system
 
-## Project Structure
+Client-side filtering via `FilterBar` and `PractitionerDirectory`:
+
+- **Specialism** dropdown — filter by treatment type
+- **Location** dropdown — filter by UK city
+- **AND logic** — results must match both filters when both are set
+- **Clear filters** — reset selections and show all practitioners
+- Dynamic results count (`Showing X of 12 practitioners`)
+
+### Premium highlighting system
+
+Premium practitioners are visually distinguished on `PractitionerCard`:
+
+- Gold/amber border and subtle background tint
+- **PREMIUM** badge with star icon
+- Verified checkmark on profile name
+- Purple-accent pricing (`£249 / month` vs `£150 / month` for Standard)
+- Premium practitioners sorted first when using the recommended sort
+
+### Mock dataset
+
+12 practitioners in `data/practitioners.ts`, including:
+
+- Name, location, tier (`Premium` / `Standard`), specialisms, and avatar image
+- Mix of UK cities and aesthetic specialisms for realistic filtering demos
+
+## What was NOT included
+
+This is a front-end prototype only. The following were intentionally left out:
+
+- **No backend / database** — all data is static and loaded from a local TypeScript file
+- **No authentication** — Log in / Join the Hub buttons are UI placeholders only
+- **No APIs** — no external services, REST endpoints, or server-side data fetching
+
+## Tech stack
+
+- [Next.js 16](https://nextjs.org) (App Router)
+- [React 19](https://react.dev)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS 4](https://tailwindcss.com/)
+
+## Project structure
 
 ```
 aesthetic-training-hub/
 ├── app/
-│   ├── globals.css    # Global styles & Tailwind imports
-│   ├── layout.tsx     # Root layout
-│   └── page.tsx       # Homepage (/)
-├── components/        # Shared UI components
-├── lib/               # Utilities and helpers
-├── public/            # Static assets
-├── next.config.ts
-├── postcss.config.mjs # Tailwind PostCSS plugin
-├── tsconfig.json
-└── package.json
-```
-
-## Production Build
-
-```bash
-npm run build
-npm run start
+│   ├── practitioners/page.tsx   # Directory page
+│   ├── globals.css
+│   └── layout.tsx
+├── components/
+│   ├── PractitionerCard.tsx       # Card with premium highlighting
+│   ├── PractitionerDirectory.tsx  # Grid, sort, and filter results
+│   ├── FilterBar.tsx              # Specialism & location filters
+│   └── practitioners/             # Hero & features sections
+├── data/
+│   └── practitioners.ts           # Mock dataset (12 practitioners)
+├── lib/                           # Filtering, sorting, display helpers
+└── docs/images/                   # Screenshots
 ```

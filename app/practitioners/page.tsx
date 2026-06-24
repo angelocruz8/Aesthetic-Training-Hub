@@ -8,15 +8,15 @@ import { practitioners } from "@/data/practitioners";
 export const metadata: Metadata = {
   title: "Practitioner Directory | Aesthetic Training Hub",
   description:
-    "Discover vetted UK aesthetic practitioners and expert trainers.",
+    "Discover vetted aesthetics trainers across the UK. Filter by specialism to find the right expert for your learning journey.",
 };
 
 export default function PractitionersPage() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900">
+    <div className="min-h-screen bg-background text-slate-900">
       <Navbar />
 
-      <main className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
+      <main className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
         <DirectoryHero />
         <PractitionerDirectory practitioners={practitioners} />
         <FeaturesSection />

@@ -7,6 +7,7 @@ export const practitioners: Practitioner[] = [
     location: "London",
     specialisms: ["Anti-wrinkle injections", "Dermal fillers", "Lip augmentation"],
     tier: "Premium",
+    avatar: "https://i.pravatar.cc/150?img=5",
   },
   {
     id: "prac-002",
@@ -14,6 +15,7 @@ export const practitioners: Practitioner[] = [
     location: "Manchester",
     specialisms: ["Chemical peels", "Microneedling", "Skin rejuvenation"],
     tier: "Standard",
+    avatar: "https://i.pravatar.cc/150?img=12",
   },
   {
     id: "prac-003",
@@ -21,6 +23,7 @@ export const practitioners: Practitioner[] = [
     location: "Birmingham",
     specialisms: ["Laser hair removal", "IPL therapy", "Pigmentation treatment"],
     tier: "Premium",
+    avatar: "https://i.pravatar.cc/150?img=9",
   },
   {
     id: "prac-004",
@@ -28,6 +31,7 @@ export const practitioners: Practitioner[] = [
     location: "Edinburgh",
     specialisms: ["Dermal fillers", "PDO threads", "Jawline contouring"],
     tier: "Standard",
+    avatar: "https://i.pravatar.cc/150?img=25",
   },
   {
     id: "prac-005",
@@ -35,6 +39,7 @@ export const practitioners: Practitioner[] = [
     location: "Bristol",
     specialisms: ["Anti-wrinkle injections", "Tear trough treatment", "Non-surgical rhinoplasty"],
     tier: "Premium",
+    avatar: "https://i.pravatar.cc/150?img=15",
   },
   {
     id: "prac-006",
@@ -42,6 +47,7 @@ export const practitioners: Practitioner[] = [
     location: "Leeds",
     specialisms: ["Microneedling", "Chemical peels", "Acne scarring treatment"],
     tier: "Standard",
+    avatar: "https://i.pravatar.cc/150?img=32",
   },
   {
     id: "prac-007",
@@ -49,6 +55,7 @@ export const practitioners: Practitioner[] = [
     location: "Glasgow",
     specialisms: ["Dermal fillers", "Lip augmentation", "Cheek enhancement"],
     tier: "Premium",
+    avatar: "https://i.pravatar.cc/150?img=10",
   },
   {
     id: "prac-008",
@@ -56,6 +63,7 @@ export const practitioners: Practitioner[] = [
     location: "Liverpool",
     specialisms: ["Skin rejuvenation", "Hydrafacial", "LED light therapy"],
     tier: "Standard",
+    avatar: "https://i.pravatar.cc/150?img=33",
   },
   {
     id: "prac-009",
@@ -63,6 +71,7 @@ export const practitioners: Practitioner[] = [
     location: "Cardiff",
     specialisms: ["Anti-wrinkle injections", "Hyperhidrosis treatment", "Masseter reduction"],
     tier: "Premium",
+    avatar: "https://i.pravatar.cc/150?img=44",
   },
   {
     id: "prac-010",
@@ -70,6 +79,7 @@ export const practitioners: Practitioner[] = [
     location: "Newcastle",
     specialisms: ["Chemical peels", "Microneedling", "Rosacea management"],
     tier: "Standard",
+    avatar: "https://i.pravatar.cc/150?img=26",
   },
   {
     id: "prac-011",
@@ -77,6 +87,7 @@ export const practitioners: Practitioner[] = [
     location: "Nottingham",
     specialisms: ["PDO threads", "Dermal fillers", "Neck rejuvenation"],
     tier: "Premium",
+    avatar: "https://i.pravatar.cc/150?img=51",
   },
   {
     id: "prac-012",
@@ -84,5 +95,6 @@ export const practitioners: Practitioner[] = [
     location: "Brighton",
     specialisms: ["Lip augmentation", "Skin boosters", "Profhilo"],
     tier: "Standard",
+    avatar: "https://i.pravatar.cc/150?img=47",
   },
 ];

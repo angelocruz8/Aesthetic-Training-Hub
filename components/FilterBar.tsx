@@ -51,19 +51,19 @@ export function FilterBar({ practitioners, children }: FilterBarProps) {
 
   return (
     <>
-      <section className="rounded-2xl border border-slate-200/80 bg-white p-4 shadow-sm sm:p-5">
+      <section className="rounded-2xl border border-slate-200/70 bg-white p-4 shadow-sm sm:p-5">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-center">
           <div className="grid flex-1 gap-3 sm:grid-cols-2">
             <FilterSelect
               icon={<TagIcon className="h-4 w-4 text-slate-400" />}
-              label="Filter by specialism"
+              label="All Specialisms"
               value={specialism}
               onChange={setSpecialism}
               options={specialisms}
             />
             <FilterSelect
               icon={<MapPinIcon className="h-4 w-4 text-slate-400" />}
-              label="Filter by location"
+              label="All Locations"
               value={location}
               onChange={setLocation}
               options={locations}
@@ -121,8 +121,8 @@ function FilterSelect({
         value={value}
         onChange={(event) => onChange(event.target.value)}
         aria-label={label}
-        className={`w-full appearance-none rounded-xl border border-slate-200 bg-slate-50/50 py-3 pl-11 pr-10 text-sm transition-colors hover:border-slate-300 hover:bg-white focus:border-brand-500 focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand-500/20 ${
-          value ? "font-medium text-slate-900" : "text-slate-500"
+        className={`w-full appearance-none rounded-xl border border-slate-200 bg-white py-3 pl-11 pr-10 text-sm transition-colors hover:border-slate-300 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/20 ${
+          value ? "font-medium text-slate-900" : "text-slate-600"
         }`}
       >
         <option value="">{label}</option>

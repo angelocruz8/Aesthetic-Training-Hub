@@ -6,4 +6,5 @@ export interface Practitioner {
   location: string;
   specialisms: string[];
   tier: PractitionerTier;
+  avatar: string;
 }

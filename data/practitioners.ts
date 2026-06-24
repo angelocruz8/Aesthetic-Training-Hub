@@ -1,0 +1,88 @@
+import type { Practitioner } from "@/types/practitioner";
+
+export const practitioners: Practitioner[] = [
+  {
+    id: "prac-001",
+    name: "Dr. Sarah Mitchell",
+    location: "London",
+    specialisms: ["Anti-wrinkle injections", "Dermal fillers", "Lip augmentation"],
+    tier: "Premium",
+  },
+  {
+    id: "prac-002",
+    name: "James O'Connor",
+    location: "Manchester",
+    specialisms: ["Chemical peels", "Microneedling", "Skin rejuvenation"],
+    tier: "Standard",
+  },
+  {
+    id: "prac-003",
+    name: "Dr. Priya Sharma",
+    location: "Birmingham",
+    specialisms: ["Laser hair removal", "IPL therapy", "Pigmentation treatment"],
+    tier: "Premium",
+  },
+  {
+    id: "prac-004",
+    name: "Emily Fraser",
+    location: "Edinburgh",
+    specialisms: ["Dermal fillers", "PDO threads", "Jawline contouring"],
+    tier: "Standard",
+  },
+  {
+    id: "prac-005",
+    name: "Dr. Michael Chen",
+    location: "Bristol",
+    specialisms: ["Anti-wrinkle injections", "Tear trough treatment", "Non-surgical rhinoplasty"],
+    tier: "Premium",
+  },
+  {
+    id: "prac-006",
+    name: "Hannah Williams",
+    location: "Leeds",
+    specialisms: ["Microneedling", "Chemical peels", "Acne scarring treatment"],
+    tier: "Standard",
+  },
+  {
+    id: "prac-007",
+    name: "Dr. Amara Okonkwo",
+    location: "Glasgow",
+    specialisms: ["Dermal fillers", "Lip augmentation", "Cheek enhancement"],
+    tier: "Premium",
+  },
+  {
+    id: "prac-008",
+    name: "Tom Hughes",
+    location: "Liverpool",
+    specialisms: ["Skin rejuvenation", "Hydrafacial", "LED light therapy"],
+    tier: "Standard",
+  },
+  {
+    id: "prac-009",
+    name: "Dr. Rachel Davies",
+    location: "Cardiff",
+    specialisms: ["Anti-wrinkle injections", "Hyperhidrosis treatment", "Masseter reduction"],
+    tier: "Premium",
+  },
+  {
+    id: "prac-010",
+    name: "Sophie Lambert",
+    location: "Newcastle",
+    specialisms: ["Chemical peels", "Microneedling", "Rosacea management"],
+    tier: "Standard",
+  },
+  {
+    id: "prac-011",
+    name: "Dr. Daniel Brooks",
+    location: "Nottingham",
+    specialisms: ["PDO threads", "Dermal fillers", "Neck rejuvenation"],
+    tier: "Premium",
+  },
+  {
+    id: "prac-012",
+    name: "Lucy Patterson",
+    location: "Brighton",
+    specialisms: ["Lip augmentation", "Skin boosters", "Profhilo"],
+    tier: "Standard",
+  },
+];
